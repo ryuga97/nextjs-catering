@@ -3,7 +3,6 @@ import Image from "next/image";
 import style from "../styles/Home.module.css";
 import media from "../styles/media.module.css";
 
-
 export default function Home() {
   return (
     <div className={`${style.all_content}`}>
@@ -11,10 +10,15 @@ export default function Home() {
         <title>Create Next App</title>
         <meta name="description" content="説明説明説明" />
       </Head>
-      {/* ------------------------------------- header */}
+
+      {/* ----------------------------------------------
+            header
+         ---------------------------------------------  */}
       <header className={`${style.hd_all} ${media.hd_sp} ${media.close}`}>
         <div className={`${style.hd_wrapper} ${media.hd_wrapper_sp}`}>
-          <div className={`${style.nextImg} ${style.hd_logo} ${media.hd_logo_sp}`}>
+          <div
+            className={`${style.nextImg} ${style.hd_logo} ${media.hd_logo_sp}`}
+          >
             <a href="/">
               <Image src="/logo-1line.svg" width={273.72} height={35} />
             </a>
@@ -74,7 +78,9 @@ export default function Home() {
           </nav>
           <a className={`${style.SpMenuBtn}`}>
             <span className={`${style.SpMenuBtn_inner}`}>
-              <span className={`${style.SpMenuBtn_txt} ${style.open}`}>MENU</span>
+              <span className={`${style.SpMenuBtn_txt} ${style.open}`}>
+                MENU
+              </span>
               {/* <span className={`${style.SpMenuBtn_txt}`}>CLOSE</span> */}
             </span>
           </a>
@@ -82,14 +88,25 @@ export default function Home() {
         </div>
       </header>
       {/* sp用のメニュー画面作成 */}
-      {/* ------------------------------------- main */}
+
       <main>
-        {/* ------------------------------------- main visual */}
+        {/* ----------------------------------------------
+            main visual
+         ---------------------------------------------  */}
         <div className={`${style.mainVisual} ${style.layout_width}`}>
-          <div className={`${style.nextImg} ${style.mainVisual_img} ${media.mainVisual_img_sp}`}>
-            <Image src="/img-mainVisual.jpg" width={1200} height={742} objectFit={"cover"} />
+          <div
+            className={`${style.nextImg} ${style.mainVisual_img} ${media.mainVisual_img_sp}`}
+          >
+            <Image
+              src="/img-mainVisual.jpg"
+              width={1200}
+              height={742}
+              objectFit={"cover"}
+            />
           </div>
-          <div className={`${style.mainVisual_logo} ${media.mainVisual_logo_sp}`}>
+          <div
+            className={`${style.mainVisual_logo} ${media.mainVisual_logo_sp}`}
+          >
             <div className={`${style.nextImg} ${style.mainVisual_logo_img}`}>
               <Image
                 src="/logo-mainVisual.svg"
@@ -127,7 +144,10 @@ export default function Home() {
               />
             </span>
           </h1>
-          <a className={`${style.mainVisual_btn} ${media.mainVisual_btn_sp}`} href="#">
+          <a
+            className={`${style.mainVisual_btn} ${media.mainVisual_btn_sp}`}
+            href="#"
+          >
             <Image
               src="/btn-order.png"
               width={170}
@@ -135,8 +155,13 @@ export default function Home() {
               alt="注文する"
             />
           </a>
-          <a className={`${style.mainVisual_specialBtn} ${style.btn_alpha} ${media.mainVisual_specialBtn_sp}`} href="#">
-            <span className={`${style.mainVisual_specialBtn_img} ${media.mainVisual_specialBtn_img_sp}`}>
+          <a
+            className={`${style.mainVisual_specialBtn} ${style.btn_alpha} ${media.mainVisual_specialBtn_sp}`}
+            href="#"
+          >
+            <span
+              className={`${style.mainVisual_specialBtn_img} ${media.mainVisual_specialBtn_img_sp}`}
+            >
               <Image
                 src="/1644164035625-500x500.jpg"
                 width={120}
@@ -149,7 +174,9 @@ export default function Home() {
             className={`${style.mainVisual_specialBtn} ${style.mainVisual_specialBtn02} ${style.btn_alpha} ${media.mainVisual_specialBtn_sp}`}
             href="#"
           >
-            <span className={`${style.mainVisual_specialBtn_img} ${media.mainVisual_specialBtn_img_sp}`}>
+            <span
+              className={`${style.mainVisual_specialBtn_img} ${media.mainVisual_specialBtn_img_sp}`}
+            >
               <Image
                 src="/PXL_20211209_091052012.jpg"
                 width={120}
@@ -160,7 +187,9 @@ export default function Home() {
           </a>
         </div>
 
-        {/* ------------------------------------- hero layout */}
+        {/* ----------------------------------------------
+            hero layout
+         ---------------------------------------------  */}
         <div className={`${style.hero} ${style.layout_width}`}>
           <div className={`${style.hero_inner} ${media.hero_inner_sp}`}>
             <p className={`${style.hero_txt}`}>
@@ -211,7 +240,9 @@ export default function Home() {
           </div>
         </div>
 
-        {/* ------------------------------------- ケータリング */}
+        {/* ----------------------------------------------
+            ケータリング
+         ---------------------------------------------  */}
         <section className={`${style.catering} ${style.layout_width}`}>
           <h2 className={`${style.catering_title}`}>CATERING</h2>
           {/* コーディネート */}
@@ -230,7 +261,10 @@ export default function Home() {
                 <br />
                 福岡ではソネスしかしていない自慢のケータリングスタイルです。
               </p>
-              <a href="#" className={`${style.catering_moreBtn} ${style.btn_arrcic}`}>
+              <a
+                href="#"
+                className={`${style.catering_moreBtn} ${style.btn_arrcic}`}
+              >
                 <Image src="/txt-more.svg" width={44} height={10} alt="MORE" />
               </a>
             </div>
@@ -249,7 +283,10 @@ export default function Home() {
               <p className={`${style.catering_txt}`}>
                 ”つどう”をテーマに、箱庭スタイルのケータリングをご用意しました。ご家庭やスモールオフィスでのパーティーにぴったりです。4名様よりご注文承ります。
               </p>
-              <a href="#" className={`${style.catering_moreBtn} ${style.btn_arrcic}`}>
+              <a
+                href="#"
+                className={`${style.catering_moreBtn} ${style.btn_arrcic}`}
+              >
                 <Image src="/txt-more.svg" width={44} height={10} alt="MORE" />
               </a>
             </div>
@@ -268,14 +305,19 @@ export default function Home() {
               <p className={`${style.catering_txt}`}>
                 アメリカのトップブランドグリルメーカー「チャーブロイル社」のガスグリルを使用した、BBQパーティーです。専属スタッフが調理いたします！
               </p>
-              <a href="#" className={`${style.catering_moreBtn} ${style.btn_arrcic}`}>
+              <a
+                href="#"
+                className={`${style.catering_moreBtn} ${style.btn_arrcic}`}
+              >
                 <Image src="/txt-more.svg" width={44} height={10} alt="MORE" />
               </a>
             </div>
           </section>
         </section>
 
-        {/* ------------------------------------- オーダー */}
+        {/* ----------------------------------------------
+            オーダー
+         ---------------------------------------------  */}
         <section className={`${style.other_container} ${style.layout_width}`}>
           <h2 className={`${style.other_container_title}`}>OTHER</h2>
 
@@ -297,7 +339,10 @@ export default function Home() {
                 ちょっとしたパーティーやお花見、クリスマスにオススメです。
               </p>
               <div className={`${style.other_btnWrapp}`}>
-                <a href="#" className={`${style.other_btn} ${style.nextImg} ${style.btn_arrcic}`}>
+                <a
+                  href="#"
+                  className={`${style.other_btn} ${style.nextImg} ${style.btn_arrcic}`}
+                >
                   <Image
                     src="/txt-more.svg"
                     width={44}
@@ -341,7 +386,10 @@ export default function Home() {
                 メニューのバリエーションの組み合わせは数百種類。ご要望に合わせてご用意いたします。
               </p>
               <div className={`${style.other_btnWrapp}`}>
-                <a href="#" className={`${style.other_btn} ${style.nextImg} ${style.btn_arrcic}`}>
+                <a
+                  href="#"
+                  className={`${style.other_btn} ${style.nextImg} ${style.btn_arrcic}`}
+                >
                   <Image
                     src="/txt-more.svg"
                     width={44}
@@ -367,7 +415,9 @@ export default function Home() {
           </section>
         </section>
 
-        {/* ------------------------------------- ギャラリー */}
+        {/* ----------------------------------------------
+            ギャラリー
+         ---------------------------------------------  */}
         <section className={`${style.gallery_container}`}>
           <h2 className={`${style.gallery_container_title} ${style.nextImg}`}>
             <Image src="/ttl_gallery.png" width={274} height={85.4} />
@@ -422,7 +472,9 @@ export default function Home() {
           <div
             className={`${style.gallery_container_moreBtn} ${style.nextImg}`}
           >
-            <a className={`${style.blogContainer_moreBtn} ${style.btn_alpha} ${style.btn_arrcic}`}>
+            <a
+              className={`${style.blogContainer_moreBtn} ${style.btn_alpha} ${style.btn_arrcic}`}
+            >
               <Image
                 src="/txt-more-white.svg"
                 width={59}
@@ -433,7 +485,9 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ------------------------------------- ブログ */}
+        {/* ----------------------------------------------
+            ブログ
+         ---------------------------------------------  */}
         <section className={`${style.blog_container}`}>
           <h2 className={`${style.blog_container_title} ${style.nextImg}`}>
             <span className={`${style.blog_container_title_img}`}>
@@ -463,7 +517,9 @@ export default function Home() {
                   </p>
                   <p className={`${style.blog_item_date}`}>2022.02.13</p>
                   <div className={`${style.blog_item_btnWrapp}`}>
-                    <div className={`${style.blog_item_btn} ${style.btn_arrcic}`}>
+                    <div
+                      className={`${style.blog_item_btn} ${style.btn_arrcic}`}
+                    >
                       <Image
                         src="/txt-read.png"
                         width={42}
@@ -489,7 +545,9 @@ export default function Home() {
                   <p className={`${style.blog_item_title}`}>二月満月おはぎ</p>
                   <p className={`${style.blog_item_date}`}>2022.02.07</p>
                   <div className={`${style.blog_item_btnWrapp}`}>
-                    <div className={`${style.blog_item_btn} ${style.btn_arrcic}`}>
+                    <div
+                      className={`${style.blog_item_btn} ${style.btn_arrcic}`}
+                    >
                       <Image
                         src="/txt-read.png"
                         width={42}
@@ -517,7 +575,9 @@ export default function Home() {
                   </p>
                   <p className={`${style.blog_item_date}`}>2022.02.02</p>
                   <div className={`${style.blog_item_btnWrapp}`}>
-                    <div className={`${style.blog_item_btn} ${style.btn_arrcic}`}>
+                    <div
+                      className={`${style.blog_item_btn} ${style.btn_arrcic}`}
+                    >
                       <Image
                         src="/txt-read.png"
                         width={42}
@@ -530,7 +590,9 @@ export default function Home() {
               </a>
             </li>
           </ul>
-          <a className={`${style.blogContainer_moreBtn02} ${style.btn_alpha} ${style.btn_arrcic}`}>
+          <a
+            className={`${style.blogContainer_moreBtn02} ${style.btn_alpha} ${style.btn_arrcic}`}
+          >
             <Image
               src="/txt-more-white.svg"
               width={59}
@@ -540,7 +602,9 @@ export default function Home() {
           </a>
         </section>
 
-        {/* ------------------------------------- コンタクト */}
+        {/* ----------------------------------------------
+            コンタクト
+         ---------------------------------------------  */}
         <section className={`${style.contact_section}`}>
           <div className={`${style.contact_section_innre}`}>
             <h2 className={`${style.contact_section_title} ${style.nextImg}`}>
@@ -556,7 +620,11 @@ export default function Home() {
               <br />
               人数、ご予算、年齢層、アレルギー、メニューのご要望をあらかじめ決めていただくとご注文がスムーズです。
             </p>
-            <a className={`${style.contact_section_btn} ${style.btn_alpha} ${style.btn_arrcic}`}>ご利用方法</a>
+            <a
+              className={`${style.contact_section_btn} ${style.btn_alpha} ${style.btn_arrcic}`}
+            >
+              ご利用方法
+            </a>
             <div className={`${style.contact_itemContainer} ${style.nextImg}`}>
               <dl className={`${style.contact_item}`}>
                 <dt className={`${style.contact_item_title}`}>
@@ -615,9 +683,13 @@ export default function Home() {
         </section>
       </main>
 
-      {/* ------------------------------------- footer */}
+      {/* ----------------------------------------------
+            footer
+         ---------------------------------------------  */}
       <footer className={`${style.footer}`}>
-        <a className={`${style.pageTopBtn} ${style.btn_alpha} ${style.nextImg}`}>
+        <a
+          className={`${style.pageTopBtn} ${style.btn_alpha} ${style.nextImg}`}
+        >
           <Image src="/btn-pagetop.png" width={14} height={161} />
         </a>
         <div className={`${style.footer_inner}`}>
@@ -631,25 +703,39 @@ export default function Home() {
                 <br />
                 〒810-0022 福岡市中央区薬院1-16-18-102
               </p>
-              <a href="#" className={`${style.foot_access_btn} ${style.btn_alpha}`}>
+              <a
+                href="#"
+                className={`${style.foot_access_btn} ${style.btn_alpha}`}
+              >
                 Google Mapで見る
               </a>
             </dd>
           </dl>
           <ul className={`${style.shop_list}  ${style.nextImg}`}>
             <li className={`${style.shop_item}`}>
-              <a className={`${style.shop_item_link} ${style.btn_alpha}`} href="#">
+              <a
+                className={`${style.shop_item_link} ${style.btn_alpha}`}
+                href="#"
+              >
                 <Image src="/btn-shop01.png" width={140} height={188} />
               </a>
             </li>
             <li className={`${style.shop_item}`}>
-              <a className={`${style.shop_item_link} ${style.btn_alpha}`} href="#">
+              <a
+                className={`${style.shop_item_link} ${style.btn_alpha}`}
+                href="#"
+              >
                 <Image src="/btn-shop02.png" width={140} height={188} />
               </a>
             </li>
           </ul>
           <small className={`${style.copyRight}  ${style.nextImg}`}>
-                <Image src="/txt-copyright.png" width={9} height={232} alt="© CAFE SONES. All Rights Reserved."/>
+            <Image
+              src="/txt-copyright.png"
+              width={9}
+              height={232}
+              alt="© CAFE SONES. All Rights Reserved."
+            />
           </small>
         </div>
       </footer>
