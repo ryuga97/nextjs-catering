@@ -77,6 +77,7 @@
 
   .hero_inner_sp {
     display: block;
+		margin: 0;
   }
 
   .hero_txt_sp {
@@ -85,4 +86,39 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+	.hero_list_sp{
+		margin-top: 30px;
+		width: 100%;
+	}
+}
+
+/* ケータリング
+---------------------------------- */
+
+@media screen and (max-width: 640px) {
+
+.catering_sp{
+	position: relative;
+	padding: 0%;
+	width: 100%;
+	margin-top: 41px;
+	padding-bottom: 32px;
+}
+
+.catering_title_sp{
+	position: static;
+	text-align: right;
+	padding-top: 15px;
+	height: 31px;
+}
+
+.catering_title_sp::before{
+	display: inline-block;
+	width: 267px;
+	height: 34px;
+	background: url(../public/ttl-catrting-tb.svg) 0 0 no-repeat;
+	background-size: contain;
+	content: " ";
+}
 }

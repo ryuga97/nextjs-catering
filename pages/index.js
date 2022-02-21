@@ -205,7 +205,7 @@ export default function Home() {
             </p>
             {/* .helo_list globalが優先されるので直書き */}
             <ul
-              className={`${style.hero_list} ${style.nextImg}`}
+              className={`${style.hero_list} ${style.nextImg} ${media.hero_list_sp}`}
               style={{ marginTop: `3px` }}
             >
               <li className={`${style.hero_list_item}`}>
@@ -245,8 +245,8 @@ export default function Home() {
         {/* ----------------------------------------------
             ケータリング
          ---------------------------------------------  */}
-        <section className={`${style.catering} ${style.layout_width}`}>
-          <h2 className={`${style.catering_title}`}>CATERING</h2>
+        <section className={`${style.catering} ${style.layout_width} ${media.catering_sp}`}>
+          <h2 className={`${style.catering_title} ${media.catering_title_sp}`}>CATERING</h2>
           {/* コーディネート */}
           <section className={`${style.catering_item}`}>
             <div className={`${style.catering_txtBox}`}>
