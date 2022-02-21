@@ -7,6 +7,8 @@ export default function Home() {
   return (
     <div className={`${style.all_content}`}>
       <Head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1.0" />
         <title>Create Next App</title>
         <meta name="description" content="説明説明説明" />
       </Head>
@@ -93,7 +95,7 @@ export default function Home() {
         {/* ----------------------------------------------
             main visual
          ---------------------------------------------  */}
-        <div className={`${style.mainVisual} ${style.layout_width}`}>
+        <div className={`${style.mainVisual} ${style.layout_width} ${media.mainVisual_sp}`}>
           <div
             className={`${style.nextImg} ${style.mainVisual_img} ${media.mainVisual_img_sp}`}
           >
@@ -190,9 +192,9 @@ export default function Home() {
         {/* ----------------------------------------------
             hero layout
          ---------------------------------------------  */}
-        <div className={`${style.hero} ${style.layout_width}`}>
+        <div className={`${style.hero} ${style.layout_width} ${media.hero_sp}`}>
           <div className={`${style.hero_inner} ${media.hero_inner_sp}`}>
-            <p className={`${style.hero_txt}`}>
+            <p className={`${style.hero_txt} ${media.hero_txt_sp}`}>
               ソネスのケータリングは決まったコンセプトやメニューがありません。
               <br />
               ゲストの皆様が喜んでいただけるように
